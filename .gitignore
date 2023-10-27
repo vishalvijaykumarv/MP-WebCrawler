@@ -1,0 +1,10 @@
+.idea
+venv
+*.csv
+*.~lock*
+__pycache__
+test_*
+.env
+*.txt
+*.bkp
+*.drawio
