@@ -1,5 +1,7 @@
 import logging
+
 from colorlog import ColoredFormatter
+
 logging.getLogger("urllib3").setLevel(logging.ERROR)
 
 

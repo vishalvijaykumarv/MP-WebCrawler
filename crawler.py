@@ -1,9 +1,11 @@
-from WebScraper import *
-import pandas as pd
-import time
-import threading
-import sys
 import hashlib
+import sys
+import threading
+import time
+
+import pandas as pd
+
+from WebScraper import *
 
 
 def que_func(one_url, count):
@@ -27,7 +29,7 @@ def process_urls():
     try:
         url_list = [sys.argv[1]]
     except Exception as exception:
-        url_list = ["https://realpython.github.io/fake-jobs/"]  # you can manually change this url for test
+        url_list = ["https://thirdage.com/"]  # you can manually change this url for test
         console_log.info(f'No URL Found from user, Starting the process with default list {url_list}')
         console_log.debug(f"No URL from the user\n {exception} ")
         pass

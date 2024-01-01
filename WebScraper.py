@@ -1,11 +1,13 @@
-import requests
-from requests.adapters import HTTPAdapter
-from bs4 import BeautifulSoup
 import re
 import urllib.parse
-from urllib3 import Retry
-from random_user_agent.user_agent import UserAgent
+
+import requests
+from bs4 import BeautifulSoup
 from random_user_agent.params import SoftwareName, OperatingSystem
+from random_user_agent.user_agent import UserAgent
+from requests.adapters import HTTPAdapter
+from urllib3 import Retry
+
 from ConsoleLogger import ConsoleLogger
 
 console_log = ConsoleLogger('console_log').logger
